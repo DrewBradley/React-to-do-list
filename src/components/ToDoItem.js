@@ -1,10 +1,15 @@
 import React from "react"
 
-function ToDoItem() {
+function ToDoItem(props) {
   return(
     <div className="to-do-item">
-      <input type="checkbox" id="wake-up" name="wake-up" />
-      <label for="wake-up">Wake Up!</label>
+      <input 
+        type="checkbox" 
+        id="todo-item" 
+        checked={props.item.completed}
+        onChange={() => props.handleClick(props.item.id)}
+      />
+      <label for="todo-item">{props.item.item}</label>
     </div>
   )
 }
