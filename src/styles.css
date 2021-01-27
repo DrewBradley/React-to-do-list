@@ -1,0 +1,31 @@
+label {
+  font-size: 3rem;
+}
+
+input {
+  transform: scale(3);
+  margin: 5%;
+}
+
+.to-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid #efefef;
+  width: 50%;
+}
+
+.to-do-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  border-bottom: 1px solid #cecece;
+  margin-bottom: 5%;
+}
+
+input[type=checkbox]:focus {
+  outline: 0;
+}
