@@ -1,6 +1,8 @@
 import React from "react"
 
 function ToDoItem(props) {
+  const doneSteez = {textDecorationLine: 'line-through'}
+
   return(
     <div className="to-do-item">
       <input 
@@ -9,7 +11,7 @@ function ToDoItem(props) {
         checked={props.item.completed}
         onChange={() => props.handleClick(props.item.id)}
       />
-      <label for="todo-item">{props.item.item}</label>
+      <label style={props.item.completed ? doneSteez : null} htmlFor="todo-item">{props.item.item}</label>
     </div>
   )
 }

@@ -12,7 +12,7 @@ const toDoData = [
   completed: false
 },
 {id: 4,
-  item: "Kick Ass!",
+  item: "Write code!",
   completed: false
 },
 {id: 5,
